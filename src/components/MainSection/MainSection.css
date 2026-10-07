@@ -1,0 +1,102 @@
+.main-section {
+  position: relative;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.75)),
+                     url('../../assets/backgroundMain.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  min-height: 85vh;
+}
+
+.overlay {
+  display: none;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: translateY(0);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.text-overlay .tagline {
+  color: #c9a96e;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.text-overlay p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-overlay p {
+    font-size: 1rem;
+  }
+
+  .text-overlay {
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+    padding: 20px;
+    top: -10%;
+  }
+
+  .main-section {
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-section h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .main-section p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .main-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+}

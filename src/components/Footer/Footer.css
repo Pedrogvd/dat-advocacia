@@ -1,0 +1,99 @@
+/* Manter o estilo do footer original */
+.footer {
+  background-color: #383838;
+  color: #D3D3D3;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: #D3D3D3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #FFF;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-nav ul li a {
+  color: #D3D3D3;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #FFF;
+}
+
+/* Estilos para o botão de WhatsApp */
+.footer-whatsapp {
+  position: fixed; /* Fixa o botão no canto inferior esquerdo */
+  left: 20px; /* Distância da borda esquerda */
+  bottom: 20px; /* Distância da borda inferior */
+  z-index: 999; /* Garante que o botão fique sobre outros elementos */
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.whatsapp-button img {
+  width: 80px; /* Aumenta o tamanho da imagem para 80px */
+  height: 80px; /* Aumenta o tamanho da imagem para 80px */
+}
+
+@media (max-width: 768px) {
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-info {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .whatsapp-button img {
+    width: 60px; /* Tamanho menor da imagem para telas pequenas */
+    height: 60px; /* Tamanho menor da imagem para telas pequenas */
+  }
+}

@@ -1,0 +1,58 @@
+.about-section {
+    padding: 60px 20px;
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .about-container p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .specialties-container {
+    margin-top: 40px;
+  }
+
+  .specialties-container h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .specialty-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .specialty-tag {
+    border: 1.5px solid #c9a96e;
+    color: #e8e8e8;
+    background-color: rgba(201, 169, 110, 0.08);
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
